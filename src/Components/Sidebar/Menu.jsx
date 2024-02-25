@@ -50,15 +50,6 @@ const Menu = () => {
         </a>
         <a
           className="flex items-center placeholder:text-info gap-5 text-md transform transition-transform duration-300 hover:-translate-y-2 p-1"
-          href="https://www.linkedin.com/in/chandandanegc1/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FiLinkedin className="text-2xl" stroke="#0277b5" />
-          Linkedin
-        </a>
-        <a
-          className="flex items-center placeholder:text-info gap-5 text-md transform transition-transform duration-300 hover:-translate-y-2 p-1"
           href="https://leetcode.com/chandanegc/"
           target="_blank"
           rel="noreferrer"
@@ -68,13 +59,22 @@ const Menu = () => {
         </a>
         <a
           className="flex items-center placeholder:text-info gap-5 text-md transform transition-transform duration-300 hover:-translate-y-2 p-1"
+          href="https://www.linkedin.com/in/chandandanegc1/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FiLinkedin className="text-2xl" stroke="#0277b5" />
+          Linkedin
+        </a>
+        {/* <a
+          className="flex items-center placeholder:text-info gap-5 text-md transform transition-transform duration-300 hover:-translate-y-2 p-1"
           href="https://instagram.com/"
           target="_blank"
           rel="noreferrer"
         >
           <FiInstagram className="text-2xl" stroke="#b5179e" />
           Instagram
-        </a>
+        </a> */}
       </div>
     </div>
   );

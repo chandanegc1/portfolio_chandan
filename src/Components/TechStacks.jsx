@@ -23,26 +23,25 @@ const TechStacks = () => {
             "HTML5",
             "CSS",
             "SASS",
-            "Tailwind",
             "JavaScript",
             "React Js",
+            "Redux / Toolkit",
           ]}
         />
         <TechCard
           title={"Backend"}
-          tech={["Node Js", "Express Js", "Auth0"]}
+          tech={["Node Js", "Express Js", "JWT", "Socket.io"]}
           reference={ref}
         />
         <TechCard title={"Database"} tech={["MongoDB"]} reference={ref} />
         <TechCard
           title={"Tools"}
-          tech={["GitHub", "Postman"]}
+          tech={["GitHub", "Postman", "Multer"]}
           reference={ref}
         />
-        <TechCard title={"Language"} tech={["C++"]} reference={ref} />
+        <TechCard title={"Language"} tech={["C /C++"]} reference={ref} />
       </motion.div>
     </div>
   );
 };
-
 export default TechStacks;
