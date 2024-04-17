@@ -6,7 +6,16 @@ export const projectData = [
       "React.js, Reduxjs/toolkit, MongoDB, Express.js, Node.js, SASS, Axios , React-Toastify, JWT, Cookie-parser, Bcryptjs & Validator ",
     imgSrc:
       "https://github.com/abhinav2-3/Assets/blob/master/project/amazon-clone.jpeg?raw=true",
-    hrefURL: "https://shoppingwithjoy.netlify.app/",
+    hrefURL: "http://shopwithjoy.onrender.com",
+    ytLink: "",
+  },
+  {
+    id: 3,
+    title: "Job Tracker App",
+    techStack: "React.js, Nodejs, Express.js, Styled-components, MongoDB, Recharts, Axios, Cloudinary, Multer,  Cookie-parser, Express-validator, JWT, Bcryptjs, React-toastify, React-icons, Dayjs , etc",
+    imgSrc:
+      "https://static.vecteezy.com/system/resources/previews/003/070/316/large_2x/job-search-neon-signboard-on-brick-wall-free-vector.jpg",
+    hrefURL: "https://job-seeker-app.onrender.com/",
     ytLink: "",
   },
   {
@@ -16,15 +25,6 @@ export const projectData = [
     imgSrc:"https://github.com/chandanegc1/assets/blob/main/chatapp.jpg?raw=true",
     hrefURL: "https://chat-appliction.netlify.app",
     ytLink: "", 
-  },
-  {
-    id: 3,
-    title: "Job Tracker App",
-    techStack: "React.js, Nodejs, Express.js, Styled-components, MongoDB, Recharts, Axios, Cloudinary, Multer,  Cookie-parser, Express-validator, JWT, Bcryptjs, React-toastify, React-icons, Dayjs , etc",
-    imgSrc:
-      "https://static.vecteezy.com/system/resources/previews/003/070/316/large_2x/job-search-neon-signboard-on-brick-wall-free-vector.jpg",
-    hrefURL: "https://job-trackering.netlify.app",
-    ytLink: "",
   },
   {
     id: 2,
@@ -77,4 +77,4 @@ export const miniProjectsData = [
 ];
 
 export const resumeURL =
-  "https://drive.google.com/file/d/1udePiK4QDY03vvjWqi2LA24omEHLWLCb/view?usp=drive_link";
+  "https://drive.google.com/file/d/1SWVxZ0mFHER-fXOfmV5UzdDg9_ZzX-Kj/view?usp=sharing";
