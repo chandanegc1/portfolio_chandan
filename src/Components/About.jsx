@@ -2,6 +2,7 @@ import React from "react";
 import { FaUser } from "react-icons/fa6";
 import video from "./utils/video.mp4";
 import { motion } from "framer-motion";
+import { introduction } from "./utils/data";
 
 const About = () => {
   return (
@@ -38,9 +39,9 @@ const About = () => {
           />
           <div className="lg:w-2/4 flex w-full flex-col gap-6 text-d_textColor ">
             <h1 className="md:text-4xl text-3xl font-extrabold tracking-tighter ">
-              Hey, I'M Chandan Kanaujia <br />A Full Stack Web Developer <br />
+              Hey, I'M {introduction.firstName+" "+introduction.middleName+introduction.lastName} <br />A Full Stack Web Developer <br />
             </h1>
-            <span className="text-3xl font-extrabold tracking-normal text-yellow-400">
+            <span className="text-3xl font-extrabold tracking-normal text-green-400">
               Frontend | Backend
             </span>
             <a
@@ -52,7 +53,7 @@ const About = () => {
           </div>
         </div>
         <div className="text-center text-wrap hidden md:block absolute bottom-8">
-          <h1 className="text-2xl font-bold tracking-tighter text-yellow-400 uppercase">
+          <h1 className="text-2xl font-bold tracking-tighter text-green-400 uppercase">
             The next big project deserves the right developer. Click{" "}
             <span className="text-black bg-white px-2 rounded text-xl">
               Connect Me

@@ -4,6 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import Theme from "./Sidebar/Theme";
 import { motion } from "framer-motion";
+import { introduction, socialLink } from "./utils/data";
 
 const Header = ({ onToggleMenu, showMenu }) => {
   return (
@@ -16,7 +17,7 @@ const Header = ({ onToggleMenu, showMenu }) => {
     >
       <div>
         <a
-          href="mailto:chandanegc@gmail.com"
+          href={socialLink.email}
           className="transform transition-transform py-2 px-4 rounded gap-2 place-items-center font-bold duration-300 hover:-translate-y-1 flex bg-d_primary dark:bg-l_primary text-d_textColor dark:text-l_textColor hover:bg-d_secondary hover:dark:bg-l_secondary"
         >
           Contact Me <FaUser size={18} />
@@ -26,7 +27,7 @@ const Header = ({ onToggleMenu, showMenu }) => {
         <Theme />
       </div>
       <div className="hidden lg:flex text-l_textColor dark:text-d_textColor text-base font-bold uppercase">
-        Chandan | Portfolio
+        {introduction.firstName} | Portfolio
       </div>
 
       <button

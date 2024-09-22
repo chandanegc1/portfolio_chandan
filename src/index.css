@@ -50,8 +50,14 @@
         opacity: 0;
     }
 }
-
-
+.link{
+    display: flex;
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
+.box{
+    margin: 5px 0;
+}
 ::-webkit-scrollbar {
     width: 10px;
 }

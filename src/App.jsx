@@ -1,19 +1,41 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import About from "./Components/About";
 import Header from "./Components/Header";
 import Hero from "./Components/Hero";
 import Projects from "./Components/Projects";
 import Sidebar from "./Components/Sidebar/SideBar";
 import TechStacks from "./Components/TechStacks";
-import { projectData, miniProjectsData } from "./Components/utils/data";
 import Loader from "./Components/Loader";
 import ProgressBar from "./Components/ProgressBar";
+import { fetchGistData } from "./Components/utils/api";
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
   const menuHandler = () => {
     setShowMenu(!showMenu);
   };
+
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchFun = async () => {
+      try {
+        const res = await fetchGistData();
+        setData(res.data);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchFun();
+  }, []);
+
+  if (loading) return <Loader />;
+  if (error) return <div>Error: {error}</div>;
 
   return (
     <main id="main">
@@ -31,15 +53,15 @@ function App() {
             <Header onToggleMenu={menuHandler} showMenu={showMenu} />
             <Hero />
             <div className="p-4 overflow-hidden">
-              <Projects title={"Projects"} data={projectData} />
+              <Projects title={"Projects"} data={data.projectsData} />
               <TechStacks />
               <About />
-              <Projects title={"Mini Projects"} data={miniProjectsData} />
+              <Projects title={"Mini Projects"} data={data.miniProjectsData} />
             </div>
           </main>
         </div>
       </div>
-      <ProgressBar />
+      <ProgressBar /> 
     </main>
   );
 }

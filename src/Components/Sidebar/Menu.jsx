@@ -5,6 +5,7 @@ import { GiBrain } from "react-icons/gi";
 import { FaRegUserCircle } from "react-icons/fa";
 import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
 import { TbBrandLeetcode } from "react-icons/tb";
+import { socialLink } from "../utils/data";
 
 const Menu = () => {
   return (
@@ -41,7 +42,7 @@ const Menu = () => {
         <h3 className="text-md font-bold uppercase">Social</h3>
         <a
           className="flex items-center placeholder:text-info gap-5 text-md transform transition-transform duration-300 hover:-translate-y-2 p-1"
-          href="https://github.com/chandanegc1"
+          href={socialLink.github}
           target="_blank"
           rel="noreferrer"
         >
@@ -50,7 +51,7 @@ const Menu = () => {
         </a>
         <a
           className="flex items-center placeholder:text-info gap-5 text-md transform transition-transform duration-300 hover:-translate-y-2 p-1"
-          href="https://leetcode.com/chandanegc/"
+          href={socialLink.leetcode}
           target="_blank"
           rel="noreferrer"
         >
@@ -59,22 +60,22 @@ const Menu = () => {
         </a>
         <a
           className="flex items-center placeholder:text-info gap-5 text-md transform transition-transform duration-300 hover:-translate-y-2 p-1"
-          href="https://www.linkedin.com/in/chandandanegc1/"
+          href={socialLink.linkedin}
           target="_blank"
           rel="noreferrer"
         >
           <FiLinkedin className="text-2xl" stroke="#0277b5" />
           Linkedin
         </a>
-        {/* <a
+        <a
           className="flex items-center placeholder:text-info gap-5 text-md transform transition-transform duration-300 hover:-translate-y-2 p-1"
-          href="https://instagram.com/"
+          href={socialLink.instagram}
           target="_blank"
           rel="noreferrer"
         >
           <FiInstagram className="text-2xl" stroke="#b5179e" />
           Instagram
-        </a> */}
+        </a>
       </div>
     </div>
   );

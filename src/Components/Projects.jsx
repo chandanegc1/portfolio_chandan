@@ -28,6 +28,7 @@ const Projects = ({ title, data }) => {
                 hrefURL={item.hrefURL}
                 ytLink={item.ytLink}
                 techStack={item.techStack}
+                githubURL={item.githubURL}
               />
             </motion.div>
           );

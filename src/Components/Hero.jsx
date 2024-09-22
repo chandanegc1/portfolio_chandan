@@ -1,6 +1,6 @@
 import React from "react";
 import { MdDownload } from "react-icons/md";
-import { resumeURL } from "./utils/data";
+import { introduction, resumeURL } from "./utils/data";
 import { motion } from "framer-motion";
 
 const Hero = () => {
@@ -15,10 +15,10 @@ const Hero = () => {
         <img
           className="w-28 h-28 rounded-full stroke-4"
           src={"../image/avatar.png"}
-          alt="Chandan"
+          alt={introduction.firstName}
         />
         <div className="text-d_textColor md:flex flex-col hidden">
-          <h1 className="uppercase font-bold text-3xl">Chandan Kanaujia</h1>
+          <h1 className="uppercase font-bold text-3xl">{introduction.firstName+" "+introduction.middleName+introduction.lastName}</h1>
           <span className="uppercase font-normal flex justify-center text-sm tracking-widest">
             Full Stack Developer [MERN]
           </span>

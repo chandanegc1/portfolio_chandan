@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load JSON from Google Apps Script</title>
+</head>
+<body>
+    <h1>JSON Data</h1>
+    <pre id="data"></pre>
+
+    <script>
+        const url = 'https://script.google.com/macros/s/AKfycbxcilvESWVaQqeHdh8lBYr7mJuSpqkN0qdPaddjEux-2E1FKdp2itIh2JE6YRHfhMG6/exec';
+
+        fetch(url)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                document.getElementById('data').textContent = JSON.stringify(data, null, 2);
+            })
+            .catch(error => {
+                console.error('There was a problem with the fetch operation:', error);
+            });
+    </script>
+</body>
+</html>
