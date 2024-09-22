@@ -47,21 +47,26 @@ function App() {
               showMenu ? "flex" : "hidden"
             }  lg:flex h-screen fixed w-screen sm:w-[263px] z-20`}
           >
-            <Sidebar />
+            <Sidebar socialLink={data.socialLink}  />
           </div>
           <main className="relative flex-1 pl-0 lg:pl-[263px]">
-            <Header onToggleMenu={menuHandler} showMenu={showMenu} />
-            <Hero />
+            <Header
+              onToggleMenu={menuHandler}
+              showMenu={showMenu}
+              introduction={data.introduction}
+              socialLink={data.socialLink}
+            />
+            <Hero introduction={data.introduction} resumeURL={data.resumeURL} />
             <div className="p-4 overflow-hidden">
               <Projects title={"Projects"} data={data.projectsData} />
-              <TechStacks />
-              <About />
+              <TechStacks skills={data.skills} />
+              <About introduction={data.introduction} />
               <Projects title={"Mini Projects"} data={data.miniProjectsData} />
             </div>
           </main>
         </div>
       </div>
-      <ProgressBar /> 
+      <ProgressBar />
     </main>
   );
 }

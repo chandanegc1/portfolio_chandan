@@ -21,15 +21,24 @@ const TechCard = ({ title, tech, reference }) => {
                 item === "Tailwind" && "border border-blue-500/60",
                 item === "Javascript" && "border border-yellow-500/60",
                 item === "Node Js" && "border border-green-500/60",
-                item === "JavaScript" && "border border-green-500/60",
+                item === "JavaScript" && "border border-red-500/60",
                 item === "Express Js" && "border border-gray-500/60",
                 item === "MongoDB" && "border border-emerald-500/60",
                 item === "Postman" && "border border-red-500/60",
                 item === "Auth0" && "border border-red-500/60",
-                item === "React Js" && "border border-red-500/60",
+                item === "React Js" && "border border-yellow-500/60",
                 item === "C++" && "border border-blue-500/60",
                 item === "GitHub" && "border border-blue-500/60",
-                item === "SASS" && "border border-blue-500/60"
+                item === "SASS" && "border border-gray-500/60",
+                item === "HTML5" && "border border-blue-500/60",
+                item == "CSS" && "border border-green-500/60",
+                item == "Redux / Toolkit" && "border border-green-500/60",
+                item == "JWT" && "border border-white-500/60",
+                item == "Socket.io" && "border border-blue-500/60",
+                item == "Git" && "border border-white-500/60",
+                item === "GitHub Copilot" && "border border-white-500/60",
+                item === "Multer" && "border border-yellow-500/60",
+                item === "C /C++" && "border border-yellow-500/60",
               )}
             >
               {item}

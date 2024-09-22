@@ -3,7 +3,7 @@ import Menu from "./Menu";
 import Theme from "./Theme";
 import { motion } from "framer-motion";
 
-const Sidebar = () => {
+const Sidebar = ({socialLink}) => {
   return (
     <motion.aside
       className="flex flex-col"
@@ -15,7 +15,7 @@ const Sidebar = () => {
       }}
     >
       <Theme />
-      <Menu />
+      <Menu socialLink = {socialLink} />
     </motion.aside>
   );
 };

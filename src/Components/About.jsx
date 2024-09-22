@@ -2,9 +2,8 @@ import React from "react";
 import { FaUser } from "react-icons/fa6";
 import video from "./utils/video.mp4";
 import { motion } from "framer-motion";
-import { introduction } from "./utils/data";
 
-const About = () => {
+const About = ({introduction}) => {
   return (
     <motion.div
       id="about"

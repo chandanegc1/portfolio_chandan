@@ -5,9 +5,8 @@ import { GiBrain } from "react-icons/gi";
 import { FaRegUserCircle } from "react-icons/fa";
 import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
 import { TbBrandLeetcode } from "react-icons/tb";
-import { socialLink } from "../utils/data";
 
-const Menu = () => {
+const Menu = ({socialLink}) => {
   return (
     <div className="p-8 mt-0 m-3 overflow-y-auto h-full bg-l_secondary dark:bg-d_secondary text-l_textColor dark:text-d_textColor rounded-md">
       <div className="flex flex-col justify-center place-items-start p-6 gap-5">

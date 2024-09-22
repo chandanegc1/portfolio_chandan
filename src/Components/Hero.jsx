@@ -1,9 +1,8 @@
 import React from "react";
 import { MdDownload } from "react-icons/md";
-import { introduction, resumeURL } from "./utils/data";
 import { motion } from "framer-motion";
 
-const Hero = () => {
+const Hero = ({ introduction, resumeURL }) => {
   return (
     <motion.div
       className="h-40 mt-24 bg-hero-cover bg-no-repeat bg-cover bg-center rounded-lg"

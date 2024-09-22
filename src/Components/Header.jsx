@@ -4,9 +4,8 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import Theme from "./Sidebar/Theme";
 import { motion } from "framer-motion";
-import { introduction, socialLink } from "./utils/data";
 
-const Header = ({ onToggleMenu, showMenu }) => {
+const Header = ({ onToggleMenu, showMenu,introduction, socialLink }) => {
   return (
     <motion.nav
       style={{ width: "-webkit-fill-available" }}

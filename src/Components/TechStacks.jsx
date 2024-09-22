@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import TechCard from "./Card/TechCard";
 import { motion } from "framer-motion";
 
-const TechStacks = () => {
+const TechStacks = ({skills}) => {
   const ref = useRef(null);
   return (
     <div id="skills" className="h-full py-8 overflow-hidden">
@@ -19,27 +19,20 @@ const TechStacks = () => {
         <TechCard
           reference={ref}
           title={"Frontend"}
-          tech={[
-            "HTML5",
-            "CSS",
-            "SASS",
-            "JavaScript",
-            "React Js",
-            "Redux / Toolkit",
-          ]}
+          tech={skills.frontend}
         />
         <TechCard
           title={"Backend"}
-          tech={["Node Js", "Express Js", "JWT", "Socket.io"]}
+          tech={skills.backend}
           reference={ref}
         />
-        <TechCard title={"Database"} tech={["MongoDB"]} reference={ref} />
+        <TechCard title={"Database"} tech={skills.database} reference={ref} />
         <TechCard
           title={"Tools"}
-          tech={["GitHub", "Postman", "Multer"]}
+          tech={skills.tools}
           reference={ref}
         />
-        <TechCard title={"Language"} tech={["C /C++"]} reference={ref} />
+        <TechCard title={"Language"} tech={skills.languages} reference={ref} />
       </motion.div>
     </div>
   );
