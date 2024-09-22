@@ -118,10 +118,11 @@ export const socialLink = {
 
 export const certificate = [
   {
-    name: "",
-    id: "",
-    url: "",
-    img: "",
+    name: "React, @Redux/toolkit",
+    id: "23oiherc324",
+    hrefURL: "http://",
+    imgSrc: "somf.png",
+    techStack:"React, nodejs"
   },
 ];
 

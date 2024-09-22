@@ -2,9 +2,10 @@ import React from "react";
 import { AiOutlineHome } from "react-icons/ai";
 import { IoCodeSharp } from "react-icons/io5";
 import { GiBrain } from "react-icons/gi";
-import { FaRegUserCircle } from "react-icons/fa";
+import { FaCertificate, FaRegUserCircle } from "react-icons/fa";
 import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
 import { TbBrandLeetcode } from "react-icons/tb";
+import { PiCertificate } from "react-icons/pi";
 
 const Menu = ({socialLink}) => {
   return (
@@ -29,6 +30,13 @@ const Menu = ({socialLink}) => {
         >
           <GiBrain className="text-2xl" />
           Skills
+        </a>
+        <a
+          className="flex items-center placeholder:text-info gap-5 text-md transform transition-transform duration-300 hover:-translate-y-2 p-1"
+          href="#certificates"
+        >
+          <PiCertificate className="text-2xl" />
+          Certificates
         </a>
         <a
           className="flex items-center placeholder:text-info gap-5 text-md transform transition-transform duration-300 hover:-translate-y-2 p-1"

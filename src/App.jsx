@@ -8,6 +8,7 @@ import TechStacks from "./Components/TechStacks";
 import Loader from "./Components/Loader";
 import ProgressBar from "./Components/ProgressBar";
 import { fetchGistData } from "./Components/utils/api";
+import Certificate from "./Components/Certificates";
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
@@ -36,7 +37,6 @@ function App() {
 
   if (loading) return <Loader />;
   if (error) return <div>Error: {error}</div>;
-
   return (
     <main id="main">
       <Loader />
@@ -60,6 +60,7 @@ function App() {
             <div className="p-4 overflow-hidden">
               <Projects title={"Projects"} data={data.projectsData} />
               <TechStacks skills={data.skills} />
+              <Certificate certificate={data.certificate} />
               <About introduction={data.introduction} />
               <Projects title={"Mini Projects"} data={data.miniProjectsData} />
             </div>
