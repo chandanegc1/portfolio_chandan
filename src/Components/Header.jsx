@@ -12,7 +12,7 @@ const Header = ({ onToggleMenu, showMenu,introduction, socialLink }) => {
       className="fixed lg:flex-row-reverse flex z-30 place-items-center justify-between p-4 px-8 shadow-lg rounded bg-l_primary dark:bg-d_primary shadow-l_secondary/50 dark:shadow-d_secondary/50"
       initial={{ opacity: 0, y: -100 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 4.5, duration: 0.5 }}
+      transition={{ delay: 0.5, duration: 0.2 }}
     >
       <div>
         <a

@@ -35,11 +35,10 @@ function App() {
     fetchFun();
   }, []);
 
-  if (loading) return <Loader />;
+  if (loading) return <Loader loading={false} />;
   if (error) return <div>Error: {error}</div>;
   return (
     <main id="main">
-      <Loader />
       <div className="w-full  h-full bg-l_primary dark:bg-d_primary">
         <div className="flex relative">
           <div

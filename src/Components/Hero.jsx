@@ -8,7 +8,7 @@ const Hero = ({ introduction, resumeURL }) => {
       className="h-40 mt-24 bg-hero-cover bg-no-repeat bg-cover bg-center rounded-lg"
       initial={{ opacity: 0, scale: 0.7 }}
       animate={{ opacity: 1, scale: 1 }}
-      transition={{ delay: 4.5, duration: 0.2 }}
+      transition={{ delay: 0.5, duration: 0.2 }}
     >
       <div className="flex text-d_textColor h-full justify-around place-items-center bg-blur backdrop-filter backdrop-blur">
         <img
@@ -20,6 +20,9 @@ const Hero = ({ introduction, resumeURL }) => {
           <h1 className="uppercase font-bold text-3xl">{introduction.firstName+" "+introduction.middleName+introduction.lastName}</h1>
           <span className="uppercase font-normal flex justify-center text-sm tracking-widest">
             Full Stack Developer [MERN]
+          </span>
+          <span className="uppercase font-normal flex justify-center text-sm tracking-widest">
+            B.TECH (C.S.E)
           </span>
         </div>
         <a

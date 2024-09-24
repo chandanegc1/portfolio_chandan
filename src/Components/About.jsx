@@ -15,7 +15,7 @@ const About = ({introduction}) => {
       }}
       transition={{
         duration: 0.5,
-        delay: 5,
+        delay: 0.4,
         ease: "easeInOut",
       }}
     >

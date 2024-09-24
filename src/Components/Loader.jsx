@@ -1,23 +1,23 @@
 import React, { useEffect, useState } from "react";
 
-const Loader = () => {
+const Loader = ({loading}) => {
   const [hideLoader, setHideLoader] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setHideLoader(true);
-    }, 4000);
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, []);
 
   const loaderStyle = {
-    top: hideLoader ? "-100%" : "0",
+    top: loading ? "-100%" : "0",
   };
 
   return (
-    <div
-      className="w-full h-full bg-black fixed z-50 transition-all duration-400 ease-linear top-0 text-white text-3xl font-extrabold uppercase flex justify-center place-items-center"
+    <>{!hideLoader?<div
+      className="w-full h-full bg-black fixed z-50 transition-all duration-500 ease-linear top-0 text-white text-3xl font-extrabold uppercase flex justify-center place-items-center"
       id="loader"
       style={loaderStyle}
     >
@@ -30,7 +30,11 @@ const Loader = () => {
       <h1 className="absolute opacity-0 bg-gradient-to-r from-l_primary to-d_primary text-transparent bg-clip-text">
         Ambitious
       </h1>
-    </div>
+    </div>:<div
+      className="w-full h-full bg-black fixed z-50  ease-linear top-0 text-white text-3xl font-extrabold uppercase flex justify-center place-items-center"
+      id="loader"
+      style={loaderStyle}
+    ><h1>Loading.....</h1></div>}</>
   );
 };
 

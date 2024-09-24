@@ -10,7 +10,7 @@ const Sidebar = ({socialLink}) => {
       initial={{ opacity: 0, x: -200 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{
-        delay: 4.5,
+        delay: 0.5,
         duration: 0.6,
       }}
     >
