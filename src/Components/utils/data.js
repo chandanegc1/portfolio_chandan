@@ -122,7 +122,7 @@ export const certificate = [
     id: "23oiherc324",
     hrefURL: "http://",
     imgSrc: "somf.png",
-    techStack:"React, nodejs"
+    techStack: "React, nodejs",
   },
 ];
 
@@ -137,8 +137,77 @@ export const skills = {
   ],
   backend: ["Node Js", "Express Js", "JWT", "Socket.io"],
   database: ["MongoDB"],
-  tools: ["Git","GitHub","GitHub Copilot", "Postman", "Multer"],
+  tools: ["Git", "GitHub", "GitHub Copilot", "Postman", "Multer"],
   languages: ["C /C++"],
 };
 
-export const styleSkills =0;
+export const experience = [
+  {
+    key: "1",
+    companyName: "GlobalLogic",
+    logo: "https://www.globallogic.com/wp-content/uploads/2021/11/Wordmark-2.png",
+    companyWebLink: "https://www.globallogic.com",
+    Projects: "Seat Reservation System",
+    technologies: ["React", "Node.js", "Express", "MongoDB"],
+    description: "Developed a web application to streamline seat booking using the MERN stack.",
+    id: "1",
+    start: "January 2023",
+    end: "June 2023",
+    total: "6 months",
+  },
+  {
+    key: "2",
+    companyName: "Amzsoft Innvexa",
+    logo: "https://example.com/logo2.png",
+    companyWebLink: "https://www.amzsoftinnvexa.com",
+    Projects: "City Cart",
+    technologies: ["React", "Firebase", "Tailwind CSS"],
+    description: "Contributed to building a full-stack e-commerce application.",
+    id: "2",
+    start: "July 2022",
+    end: "December 2022",
+    total: "6 months",
+  },
+  {
+    key: "3",
+    companyName: "Tech Solutions",
+    logo: "https://example.com/logo3.png",
+    companyWebLink: "https://www.techsolutions.com",
+    Projects: "Inventory Management System",
+    technologies: ["Angular", "Node.js", "MySQL"],
+    description: "Designed and implemented a system to manage inventory levels in real-time.",
+    id: "3",
+    start: "March 2023",
+    end: "September 2023",
+    total: "7 months",
+  },
+  {
+    key: "4",
+    companyName: "SoftWave",
+    logo: "https://example.com/logo4.png",
+    companyWebLink: "https://www.softwave.com",
+    Projects: "HR Management System",
+    technologies: ["Vue.js", "Express", "MongoDB"],
+    description: "Assisted in developing an HR management application for employee tracking and payroll.",
+    id: "4",
+    start: "February 2022",
+    end: "August 2022",
+    total: "6 months",
+  },
+  {
+    key: "5",
+    companyName: "Innovatech",
+    logo: "https://example.com/logo5.png",
+    companyWebLink: "https://www.innovatech.com",
+    Projects: "Financial Dashboard",
+    technologies: ["React", "D3.js", "Node.js"],
+    description: "Developed a financial analytics dashboard with dynamic data visualization.",
+    id: "5",
+    start: "April 2023",
+    end: "October 2023",
+    total: "6 months",
+  },
+];
+
+
+export const styleSkills = 0;

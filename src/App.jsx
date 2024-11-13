@@ -9,6 +9,7 @@ import Loader from "./Components/Loader";
 import ProgressBar from "./Components/ProgressBar";
 import { fetchGistData } from "./Components/utils/api";
 import Certificate from "./Components/Certificates";
+import Experience from "./Components/Experience";
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
@@ -57,6 +58,7 @@ function App() {
             />
             <Hero introduction={data.introduction} resumeURL={data.resumeURL} />
             <div className="p-4 overflow-hidden">
+              <Experience/>
               <Projects title={"Projects"} data={data.projectsData} />
               <TechStacks skills={data.skills} />
               <Certificate certificate={data.certificate} />
