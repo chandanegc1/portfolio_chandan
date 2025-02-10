@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import About from "./Components/About";
+// import About from "./Components/About";
+import About from "./ui/About";
 import Header from "./Components/Header";
 import Hero from "./Components/Hero";
 import Projects from "./Components/Projects";
@@ -58,12 +59,12 @@ function App() {
             />
             <Hero introduction={data.introduction} resumeURL={data.resumeURL} />
             <div className="p-4 overflow-hidden">
-              <Experience/>
-              <Projects title={"Projects"} data={data.projectsData} />
               <TechStacks skills={data.skills} />
+              <Experience experience={data.experience}/>
+              <Projects title={"Projects"} data={data.projectsData} />
               <Certificate certificate={data.certificate} />
               <About introduction={data.introduction} />
-              <Projects title={"Mini Projects"} data={data.miniProjectsData} />
+              <Projects title={"Practice Projects"} data={data.miniProjectsData} />
             </div>
           </main>
         </div>

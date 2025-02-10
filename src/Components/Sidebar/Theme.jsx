@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FiMoon, FiSun } from "react-icons/fi";
 
 const Theme = () => {
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("light");
 
   useEffect(() => {
     if (theme === "dark") document.documentElement.classList.add("dark");

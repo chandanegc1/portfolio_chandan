@@ -6,7 +6,7 @@ const ProgressBar = () => {
   return (
     <motion.div
       className="progress-bar"
-      style={{ scaleX: scrollYProgress, height: 5 }}
+      style={{ scaleX: scrollYProgress, height: 5}}
     />
   );
 };

@@ -44,7 +44,7 @@ const ExperienceCart = ({
           <strong>Skills: </strong>
           {technologies}
         </p>}
-        <p className="text-sm">"{description}"</p>
+        <p className="text-sm">{description}</p>
         <div className="  justify-between place-items-center h-20 md:lg:flex-row md:justify-evenly link">
           <a
             href={companyWebLink || "/"}
