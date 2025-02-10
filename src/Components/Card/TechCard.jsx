@@ -2,7 +2,7 @@ import React from "react";
 import cn from "classnames";
 import { motion } from "framer-motion";
 
-const TechCard = ({ title, tech, reference }) => {
+const TechCard = ({ title, tech }) => {
   return (
     <motion.div
       className="lg:h-72 rounded-md flex flex-col flex-1 place-items-start gap-2 p-4 text-d_primary dark:text-l_primary bg-l_secondary dark:bg-d_secondary"
@@ -39,6 +39,14 @@ const TechCard = ({ title, tech, reference }) => {
                 item === "GitHub Copilot" && "border border-white-500/60",
                 item === "Multer" && "border border-yellow-500/60",
                 item === "C /C++" && "border border-yellow-500/60",
+                item === "Jest Framework" && "border border-green-500/60",
+                item === "React Testing Library" && "border border-gray-500/60",
+                item === "Styled Component CSS" && "border border-blue-500/60",
+                item === "Typescript" && "border border-blue-500/60",
+                item === "Restful API" && "border border-blue-500/60",
+                item === "API" && "border border-blue-500/60",
+                item === "JSON" && "border border-blue-500/60",
+                item === "Jira" && "border border-emerald-500/60",
               )}
             >
               {item}
