@@ -1,9 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { experience } from "./utils/data";
 import ExperienceCart from "./Card/ExperienceCart";
 
-const Experience = ({certificate=[]}) => {
+const Experience = ({experience}) => {
   return (
     <section id="experience" className="py-6 mb-5">
       <h1 className="text-xl font-bold text-l_textColor dark:text-d_textColor">

@@ -147,27 +147,48 @@ export const experience = [
     companyName: "GlobalLogic",
     logo: "https://www.globallogic.com/wp-content/uploads/2021/11/Wordmark-2.png",
     companyWebLink: "https://www.globallogic.com",
-    Projects: "Seat Reservation System",
-    technologies: ["React", "Node.js", "Express", "MongoDB"],
+    Projects: [
+      {
+        name:"Gl Seat Reservation",
+        link:"#"
+      }
+    ],
+    technologies:"",
     description: "Developed a web application to streamline seat booking using the MERN stack.",
     id: "1",
     start: "January 2023",
     end: "June 2023",
     total: "6 months",
+     certificate:"%"
   },
   {
     key: "2",
     companyName: "Amzsoft Innvexa",
-    logo: "https://example.com/logo2.png",
+    logo: "https://github.com/chandanegc1/picture_gallery/blob/main/Personal_porfolio/amzsoft_innovexa_logo.jpg?raw=true",
     companyWebLink: "https://www.amzsoftinnvexa.com",
-    Projects: "City Cart",
+    Projects: [
+      {
+        name:"City Cart",
+        link:"#"
+      },
+      {
+        name:"City Cart",
+        link:"#"
+      },
+    ], 
     technologies: ["React", "Firebase", "Tailwind CSS"],
     description: "Contributed to building a full-stack e-commerce application.",
     id: "2",
     start: "July 2022",
     end: "December 2022",
     total: "6 months",
+<<<<<<< HEAD
   }
+=======
+    certificate:"%"
+  }
+  
+>>>>>>> experience
 ];
 
 

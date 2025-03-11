@@ -16,30 +16,30 @@ const ProjectCard = ({ title, hrefURL, imgSrc, techStack, ytLink , githubURL }) 
         <figcaption className="font-bold text-xl">{title}</figcaption>
         <p className="text-sm">{techStack}</p>
         <div className="  justify-between place-items-center h-20 md:lg:flex-row md:justify-evenly link">
-          <a
+          {hrefURL && <a
             href={hrefURL || "/"}
             target="_blank"
             className="flex place-items-center text-sm bg-l_primary dark:bg-d_primary py-1 px-4 rounded-2xl border duration-300 transition-all hover:text-blue-500 box "
             rel="noreferrer"
           >
             Link <FaExternalLinkAlt size={15} className="ml-2" />
-          </a>
-          <a
+          </a>}
+         {githubURL && <a
             href={githubURL|| "/"}
             target="_blank"
             className="flex place-items-center text-sm bg-l_primary dark:bg-d_primary py-1 px-4 rounded-2xl border duration-300 transition-all hover:text-blue-500"
             rel="noreferrer"
           >
             GitHub <FaExternalLinkAlt size={15} className="ml-2" />
-          </a>
-          <a
+          </a>}
+          {ytLink &&<a
             href={ytLink || "/"}
             target="_blank"
             className="flex place-items-center text-sm py-1 px-4 rounded-2xl duration-300 transition-all hover:border hover:text-red-500"
             rel="noreferrer"
           >
            Video <PiMonitorPlayFill size={16} className="ml-2 " />
-          </a>
+          </a>}
         </div>
       </div>
     </div>

@@ -31,7 +31,7 @@ const TechStacks = ({skills}) => {
           tech={skills.tools}
           reference={ref}
         />
-        <TechCard title={"Methodologies"} tech={skills.Methodologies} reference={ref} />
+        <TechCard title={"Methodologies"} tech={skills.database} reference={ref} />
         <TechCard title={"Language"} tech={skills.languages} reference={ref} />
         
       </motion.div>
